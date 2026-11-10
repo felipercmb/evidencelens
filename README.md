@@ -39,6 +39,16 @@ Experimentos locais posteriores avaliaram inferência textual e recuperação de
 
 Essa amostra não representa uso real. Não houve validação humana independente; os resultados não estimam segurança em produção. Leia [o resumo da pesquisa](docs/RESEARCH_SUMMARY.md) e [as limitações](docs/LIMITATIONS.md).
 
+## Same-challenge comparison
+
+![Correct classifications on the same 40 AI-labelled claims: retained baseline versus experimental context candidate. Both score 33/40; all cases still require review.](docs/figures/same-challenge-results.png)
+
+Observed counts on one constructed challenge, not a comparison across datasets. Class sizes differ (10 contradictions, 10 supports, 20 insufficient-evidence cases); fractions give the denominator for each bar. Labels were authored and reviewed by AI, not independently validated by humans. The baseline was retained before evaluation; the experimental candidate was not promoted. **20/20 observed cases does not establish safety or generalization.**
+
+[Vector figure](docs/figures/same-challenge-results.svg) · [Aggregate source data](docs/figures/same-challenge-results.json) · [Rendering script](scripts/render_results_figure.py)
+
+Regenerate the SVG with `python3 scripts/render_results_figure.py` (Python standard library only). PNG rendering optionally uses ImageMagick. The figure and aggregate visualization data are original project material under MIT; source datasets retain their own licenses.
+
 ## Lotes locais
 
 Prepare JSONL com `evidence` e `answer` por linha e, opcionalmente, `id`:

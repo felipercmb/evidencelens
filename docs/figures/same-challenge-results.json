@@ -1,0 +1,93 @@
+{
+  "title": "Same challenge, different trade-offs",
+  "class_order": [
+    "contradicts",
+    "supports",
+    "insufficient"
+  ],
+  "class_labels": [
+    "Contradiction",
+    "Support",
+    "Insufficient evidence"
+  ],
+  "class_counts": [
+    10,
+    10,
+    20
+  ],
+  "n_claims": 40,
+  "n_documents": 10,
+  "annotation": "AI-authored and AI-reviewed; no human validation",
+  "selected_before_evaluation": "baseline_v1",
+  "models": [
+    {
+      "key": "baseline_v1",
+      "label": "Retained baseline",
+      "confusion_rows_true_columns_predicted": [
+        [
+          8,
+          2,
+          0
+        ],
+        [
+          1,
+          6,
+          3
+        ],
+        [
+          1,
+          0,
+          19
+        ]
+      ],
+      "correct_by_class": [
+        8,
+        6,
+        19
+      ],
+      "correct_overall": 33
+    },
+    {
+      "key": "context_only",
+      "label": "Experimental context candidate",
+      "confusion_rows_true_columns_predicted": [
+        [
+          6,
+          2,
+          2
+        ],
+        [
+          1,
+          7,
+          2
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "correct_by_class": [
+        6,
+        7,
+        20
+      ],
+      "correct_overall": 33
+    }
+  ],
+  "requires_review": 40,
+  "automatic_approvals": 0,
+  "source": {
+    "report": "../RESEARCH_SUMMARY.md",
+    "experiment": "context_scope_v2 / external_new_documents_v3",
+    "aggregate_results_sha256": "6e542f60238cbb93cd1366c79ff58de58d42bda2adfdfd5c2cf5127ae407b046",
+    "source_documents": "New source abstracts, not reproduced here; individual CC BY 4.0 verified in the local study."
+  },
+  "figure_license": "MIT, original aggregate visualization; not a license for source corpora",
+  "limitations": [
+    "Small constructed diagnostic, not a deployment sample",
+    "Observed counts do not establish safety or generalization",
+    "Both models evaluated on the same cases; no comparison across reserves",
+    "Candidate was not promoted; baseline retained by pre-evaluation selection"
+  ]
+}

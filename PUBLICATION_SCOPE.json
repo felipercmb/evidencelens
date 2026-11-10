@@ -4,7 +4,8 @@
     "Synthetic-data generator (no generated weights or datasets committed)",
     "19 demo unit tests",
     "Aggregate research summary and limitations",
-    "MIT license for original code/docs"
+    "MIT license for original code/docs",
+    "English same-challenge figure, aggregate counts, and standard-library SVG renderer"
   ],
   "excluded": [
     "External datasets and article texts",
