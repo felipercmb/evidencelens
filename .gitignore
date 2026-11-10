@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+artifacts/
+data/
+release/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.npz
+*.zip
+*.tar.gz

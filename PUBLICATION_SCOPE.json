@@ -1,0 +1,19 @@
+{
+  "included": [
+    "Original local demo code and UI",
+    "Synthetic-data generator (no generated weights or datasets committed)",
+    "19 demo unit tests",
+    "Aggregate research summary and limitations",
+    "MIT license for original code/docs"
+  ],
+  "excluded": [
+    "External datasets and article texts",
+    "All model weights including ANLI-derived weights",
+    "Private application/social-message drafts",
+    "Original machine paths, logs, binary archives and old builds",
+    "Research scripts/tests that require local corpora or weights"
+  ],
+  "reproduction": "Run train.py and demo tests; full research studies cannot be reproduced from this package alone",
+  "research_status": "Exploratory AI-labelled diagnostics, no independent human validation, no production promotion",
+  "publication_status": "Prepared locally; upload and remote verification handled separately"
+}
